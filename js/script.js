@@ -1,6 +1,5 @@
-function includeHTML(callback) {
-  var element = document.getElementById("header-container");
-  var filePath = element.getAttribute("include-html");
+function includeHTML(containerId, filePath, callback) {
+  var element = document.getElementById(containerId);
   var xhr = new XMLHttpRequest();
   xhr.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
@@ -16,9 +15,15 @@ function includeHTML(callback) {
 
 function contentLoadedCallback() {
   var navbar = document.querySelector(".navbar");
+  var signin = document.querySelector(".sign-in");
   document.querySelector("#menu-btn").onclick = () => {
     navbar.classList.toggle("active");
   };
+
+  signin.onclick = () => {
+    signin.classList.toggle("profile");
+  };
 }
 
-includeHTML(contentLoadedCallback);
+includeHTML("header-container", "components/header.html", contentLoadedCallback);
+includeHTML("footer-container", "components/footer.html", contentLoadedCallback);
