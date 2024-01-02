@@ -5,14 +5,176 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
     <link
-      rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/header.css" />
     <link rel="stylesheet" type="text/css" href="css/footer.css" />
-    <script src="https://kit.fontawesome.com/1657467247.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="fonts/remixicon.css" />
+    <script
+      src="https://kit.fontawesome.com/1657467247.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div id="header-container" include-html="components/header.html"></div>
+
+    <div class="featured-image-container">
+      <img src="img/featured-img.jpg" alt="featured-image" />
+      <div class="featured-info">
+        <div class="featured-title">Interstellar (English)</div>
+        <div class="featured-buttons">
+          <a href="#" class="ticket-btn">
+            <div class="btn-text">buy ticket</div>
+            <div class="icon"><i class="fa-solid fa-ticket"></i></div>
+          </a>
+          <a href="#" class="trailer-btn">
+            <div class="btn-text">watch trailer</div>
+            <div class="icon"><i class="fa-solid fa-play"></i></div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <section class="filter-field">
+      <div class="select-wrapper">
+        <select name="filter" class="dropdown-filter" id="filterSelect">
+          <option value="by-name">By Movie Name</option>
+          <option value="by-latest">By Latest</option>
+          <option value="by-date">By Date</option>
+        </select>
+        <span class="chevron-down"></span>
+          <i class="fa-solid fa-chevron-down"></i>
+        </span>
+      </div>
+
+      <div class="search-wrapper">
+        <div class="icon" id="filter-icon">
+          <i class="ri-equalizer-line"></i>
+        </div>
+        <div class="search-bar">
+          <input
+            type="text"
+            class="search"
+            name="search"
+            placeholder="Search for Movie and Event"
+          />
+        </div>
+      </div>
+
+      <button class="search-btn"><span>Search</span></button>
+    </section>
+
+    <div class="filter-popup" id="filterPopup">
+      <div class="close"><i class="fa-solid fa-xmark"></i></div>
+      <span class="filter-title">Filter</span>
+      <label class="container">
+        By Name
+        <input type="radio" checked="checked" name="radio" />
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">
+        By Latest
+        <input type="radio" name="radio" />
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">
+        By Date
+        <input type="radio" name="radio" />
+        <span class="checkmark"></span>
+      </label>
+
+      <button class="apply-filters">Apply</button>
+    </div>
+
+    <section class="container-name">now showing</section>
+    <section class="movie-container">
+      <div class="movie-card">
+        <div class="image-container">
+          <img src="img/featured-img.jpg" alt="" />
+        </div>
+        <div class="movie-info">
+          <span class="name">Interstellar</span>
+          <span class="language">(English)</span>
+        </div>
+        <button class="ticket-btn">buy ticket</button>
+      </div>
+      <div class="movie-card">
+        <div class="image-container">
+          <img src="img/kung-fu-panda.jpg" alt="" />
+        </div>
+        <div class="movie-info">
+          <span class="name">Kung fu panda 4</span>
+          <span class="language">(English)</span>
+        </div>
+        <button class="ticket-btn">buy ticket</button>
+      </div>
+      <div class="movie-card">
+        <div class="image-container">
+          <img src="img/avatar.jpg" alt="" />
+        </div>
+        <div class="movie-info">
+          <span class="name">Interstellar</span>
+          <span class="language">(English)</span>
+        </div>
+        <button class="ticket-btn">buy ticket</button>
+      </div>
+      <div class="movie-card">
+        <div class="image-container">
+          <img src="img/arq.jpg" alt="" />
+        </div>
+        <div class="movie-info">
+          <span class="name">Interstellar</span>
+          <span class="language">(English)</span>
+        </div>
+        <button class="ticket-btn">buy ticket</button>
+      </div>
+    </section>
+
+    <section class="container-name">upcoming movies</section>
+    <section class="movie-container">
+      <div class="movie-card">
+        <div class="image-container">
+          <img src="img/featured-img.jpg" alt="" />
+        </div>
+        <div class="movie-info">
+          <span class="name">Interstellar</span>
+          <span class="language">(English)</span>
+        </div>
+        <button class="ticket-btn">buy ticket</button>
+      </div>
+      <div class="movie-card">
+        <div class="image-container">
+          <img src="img/kung-fu-panda.jpg" alt="" />
+        </div>
+        <div class="movie-info">
+          <span class="name">Kung fu panda 4</span>
+          <span class="language">(English)</span>
+        </div>
+        <button class="ticket-btn">buy ticket</button>
+      </div>
+      <div class="movie-card">
+        <div class="image-container">
+          <img src="img/avatar.jpg" alt="" />
+        </div>
+        <div class="movie-info">
+          <span class="name">Interstellar</span>
+          <span class="language">(English)</span>
+        </div>
+        <button class="ticket-btn">buy ticket</button>
+      </div>
+      <div class="movie-card">
+        <div class="image-container">
+          <img src="img/arq.jpg" alt="" />
+        </div>
+        <div class="movie-info">
+          <span class="name">Interstellar</span>
+          <span class="language">(English)</span>
+        </div>
+        <button class="ticket-btn">buy ticket</button>
+      </div>
+    </section>
 
     <div id="footer-container" include-html="components/footer.html"></div>
 
