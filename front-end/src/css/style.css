@@ -113,6 +113,11 @@ select {
   border: 1px solid var(--black);
 }
 
+.featured-image-container .featured-info .featured-buttons a:hover {
+  color: var(--white);
+  background-color: var(--black);
+}
+
 .featured-image-container .featured-info .featured-buttons a .btn-text {
   text-transform: capitalize;
   font-weight: 900;

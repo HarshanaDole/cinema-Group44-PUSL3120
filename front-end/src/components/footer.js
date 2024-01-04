@@ -19,7 +19,7 @@ const Footer = () => {
 
           <div className="box1">
             <h3>quick links</h3>
-            <a href="index.html">
+            <a href="/">
               {" "}
               <i className="fas fa-angle-right"></i> home
             </a>
@@ -31,11 +31,11 @@ const Footer = () => {
               {" "}
               <i className="fas fa-angle-right"></i> terms
             </a>
-            <a href="#">
+            <a href="/about">
               {" "}
               <i className="fas fa-angle-right"></i> about
             </a>
-            <a href="#">
+            <a href="/contact">
               {" "}
               <i className="fas fa-angle-right"></i> contact us
             </a>

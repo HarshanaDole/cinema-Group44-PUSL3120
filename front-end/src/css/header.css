@@ -73,7 +73,7 @@
   display: none;
 }
 
-.header .flex .icons .sign-in.profile .text {
+.header .flex .icons .sign-in.profile .btn-text {
   display: none;
 }
 
@@ -204,7 +204,7 @@
     background-color: transparent;
   }
 
-  .header .flex .icons .book-btn .text {
+  .header .flex .icons .book-btn .btn-text {
     display: none;
   }
 
@@ -232,7 +232,7 @@
     padding: 0.3rem 0.8rem;
   }
 
-  .header .flex .icons .sign-in .text {
+  .header .flex .icons .sign-in .btn-text {
     font-size: 1.5rem;
   }
 }
@@ -248,7 +248,7 @@
     padding: 0.1rem 0.5rem;
   }
 
-  .header .flex .icons .sign-in .text{
+  .header .flex .icons .sign-in .btn-text{
     font-size: 1.3rem;
   }
 }

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [navbarActive, setNavbarActive] = useState(false);
@@ -12,34 +13,40 @@ const Header = () => {
     setSigninProfile((prev) => !prev);
   };
 
-  
   return (
     <div>
       <header className="header">
         <section className="flex">
-          <div id="menu-btn" className="fas fa-bars" onClick={toggleNavbar}></div>
+          <div
+            id="menu-btn"
+            className="fas fa-bars"
+            onClick={toggleNavbar}
+          ></div>
 
-          <a href="index.html" className="logo">
+          <a href="/" className="logo">
             <img src="img/sample-logo.png" alt="sample logo" />
           </a>
 
           <nav className={`navbar ${navbarActive ? "active" : ""}`}>
-            <a href="index.html">Home</a>
-            <a href="#">Movies</a>
-            <a href="#">Blog</a>
-            <a href="#">About Us</a>
-            <a href="#">Contact</a>
+            <Link to="/">Home</Link>
+            <Link to="/">Movies</Link>
+            <Link to="/">Blog</Link>
+            <Link to="/about">About Us</Link>
+            <Link to="/contact">Contact</Link>
           </nav>
 
           <div className="icons">
-            <div className={`sign-in ${signinProfile ? "profile" : ""}`} onClick={toggleSigninProfile}>
-              <span className="text">sign in</span>
+            <div
+              className={`sign-in ${signinProfile ? "profile" : ""}`}
+              onClick={toggleSigninProfile}
+            >
+              <span className="btn-text">sign in</span>
               <div className="image-container">
                 <img src="img/profile-pic.jpg" alt="" />
               </div>
             </div>
             <button className="book-btn">
-              <span className="text">book a ticket</span>
+              <span className="btn-text">book a ticket</span>
             </button>
           </div>
         </section>
