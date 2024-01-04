@@ -45,9 +45,9 @@ const Header = () => {
                 <img src="img/profile-pic.jpg" alt="" />
               </div>
             </div>
-            <button className="book-btn">
+            <a href="/buytickets" className="book-btn">
               <span className="btn-text">book a ticket</span>
-            </button>
+            </a>
           </div>
         </section>
       </header>

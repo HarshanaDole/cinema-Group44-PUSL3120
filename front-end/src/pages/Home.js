@@ -53,7 +53,7 @@ function Home() {
         <div className="featured-info">
           <div className="featured-title">Interstellar (English)</div>
           <div className="featured-buttons">
-            <a href="#" className="ticket-btn">
+            <a href="/buytickets" className="ticket-btn">
               <div className="btn-text">buy ticket</div>
               <div className="icon">
                 <i className="fa-solid fa-ticket"></i>
@@ -157,7 +157,9 @@ function Home() {
             <span className="name">Interstellar</span>
             <span className="language">(English)</span>
           </div>
-          <button className="ticket-btn">buy ticket</button>
+          <a href="/buytickets" className="ticket-btn">
+            buy ticket
+          </a>
         </div>
         <div className="movie-card">
           <div className="image-container">
@@ -167,7 +169,7 @@ function Home() {
             <span className="name">Kung fu panda 4</span>
             <span className="language">(English)</span>
           </div>
-          <button className="ticket-btn">buy ticket</button>
+          <a className="ticket-btn">buy ticket</a>
         </div>
         <div className="movie-card">
           <div className="image-container">
@@ -177,7 +179,7 @@ function Home() {
             <span className="name">Interstellar</span>
             <span className="language">(English)</span>
           </div>
-          <button className="ticket-btn">buy ticket</button>
+          <a className="ticket-btn">buy ticket</a>
         </div>
         <div className="movie-card">
           <div className="image-container">
@@ -187,7 +189,7 @@ function Home() {
             <span className="name">Interstellar</span>
             <span className="language">(English)</span>
           </div>
-          <button className="ticket-btn">buy ticket</button>
+          <a className="ticket-btn">buy ticket</a>
         </div>
       </section>
 
@@ -201,7 +203,7 @@ function Home() {
             <span className="name">Interstellar</span>
             <span className="language">(English)</span>
           </div>
-          <button className="ticket-btn">buy ticket</button>
+          <a className="ticket-btn">buy ticket</a>
         </div>
         <div className="movie-card">
           <div className="image-container">
@@ -211,7 +213,7 @@ function Home() {
             <span className="name">Kung fu panda 4</span>
             <span className="language">(English)</span>
           </div>
-          <button className="ticket-btn">buy ticket</button>
+          <a className="ticket-btn">buy ticket</a>
         </div>
         <div className="movie-card">
           <div className="image-container">
@@ -221,7 +223,7 @@ function Home() {
             <span className="name">Interstellar</span>
             <span className="language">(English)</span>
           </div>
-          <button className="ticket-btn">buy ticket</button>
+          <a className="ticket-btn">buy ticket</a>
         </div>
         <div className="movie-card">
           <div className="image-container">
@@ -231,7 +233,7 @@ function Home() {
             <span className="name">Interstellar</span>
             <span className="language">(English)</span>
           </div>
-          <button className="ticket-btn">buy ticket</button>
+          <a className="ticket-btn">buy ticket</a>
         </div>
       </section>
 
