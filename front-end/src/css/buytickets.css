@@ -1,0 +1,247 @@
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.main * {
+    font-size: 105%;
+  }
+
+  .col-12 h3 {
+    font-size: 3rem;
+  }
+
+  .col-12 .img-container {
+    height: 380px;
+    width: 100%;
+  }
+
+  .col-12 .img-container img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+.back-to-top {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 15px;
+    bottom: 15px;
+    z-index: 996;
+    background: #1bb1dc;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    transition: all 0.4s;
+  }
+  
+  .back-to-top i {
+    font-size: 28px;
+    color: #fff;
+    line-height: 0;
+  }
+  
+  .back-to-top:hover {
+    background: #39c0e7;
+    color: #fff;
+  }
+  
+  .back-to-top.active {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  /*--------------------------------------------------------------
+  # Disable aos animation delay on mobile devices
+  --------------------------------------------------------------*/
+  @media screen and (max-width: 768px) {
+    [data-aos-delay] {
+      transition-delay: 0 !important;
+    }
+  }
+  
+  /*--------------------------------------------------------------
+  # Breadcrumbs
+  --------------------------------------------------------------*/
+  .breadcrumbs {
+    padding: 15px 0;
+    background: #f9f9fb;
+    min-height: 40px;
+    margin-top: 90px;
+  }
+  
+  .breadcrumbs h2 {
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  
+  .breadcrumbs ol {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0 0 10px 0;
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  .breadcrumbs ol li+li {
+    padding-left: 10px;
+  }
+  
+  .breadcrumbs ol li+li::before {
+    display: inline-block;
+    padding-right: 10px;
+    color: #555186;
+    content: "/";
+  }
+
+  .breadcrumbs ol li .directory {
+    text-decoration: underline;
+    color: var(--main-color);
+  }
+  
+  .time-btn {
+    border-color: #0a98c0;
+    background-color: transparent;
+    width: 110px;
+    height: 35px;
+    border-radius: 10px;
+    border: 2px solid #0a98c0;
+    margin-top: 10px;
+  }
+  
+  .watch-trailer-btn {
+    width: 200px;
+    height: 35px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 2px solid #0a98c0;
+    color: black;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+  }
+  
+  .fill-btn {
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .details-slot span {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px;
+  }
+  
+  .details-slot i {
+    font-size: 18px;
+  }
+  
+  .showtime-btn {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .showtime-btn button {
+    width: 150px;
+    height: 35px;
+    background-color: transparent;
+    border: 2px solid #0a98c0;
+    border-radius: 10px;
+    margin: 10px;
+    font-weight: 600;
+  }
+  
+  .seat-table table {
+    border-collapse: separate;
+    border-spacing: 10px;
+  }
+  
+  .seat-table td {
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid black;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .seat-table td:hover{
+    background-color: blue;
+    color: white;
+  }
+  
+  .seat-table .selected {
+    background-color: blue;
+    color: white;
+  }
+  
+  .seat-table .reserved {
+    background-color: red;
+    color: white;
+  }
+  
+  .seat-table .unavailable {
+    background-color: pink;
+    color: white;
+  }
+  
+  .seat-table .hide {
+    visibility: hidden;
+  }
+  
+  .table-info {
+    gap: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+  .table-info span {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+  }
+  
+  .selected-box {
+    width: 15px;
+    height: 15px;
+    background-color: blue;
+  
+  }
+  
+  .available-box {
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    border: 1px solid black;
+  }
+  
+  .reserved-box {
+    width: 15px;
+    height: 15px;
+    background-color: red;
+  }
+  
+  .unavailable-box {
+    width: 15px;
+    height: 15px;
+    background-color: pink;
+  }
+  
+  .back-btn {
+    background-color: #424242;
+    width: 150px;
+    height: 35px;
+    border-radius: 10px;
+    color: white;
+    border: none;
+  }
+  
+  .con-btn {
+    background-color: #0a98c0;
+    width: 150px;
+    height: 35px;
+    border-radius: 10px;
+    color: white;
+    border: none;
+  }
