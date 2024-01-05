@@ -69,6 +69,14 @@
   user-select: none;
 }
 
+.header .flex .icons .sign-in .btn-text {
+  color: var(--white);
+}
+
+.header .flex .icons .sign-in:hover .btn-text{
+  color: var(--main-color);
+}
+
 .header .flex .icons .sign-in .image-container {
   display: none;
 }

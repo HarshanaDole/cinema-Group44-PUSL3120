@@ -2,13 +2,14 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Header = () => {
-  const [navbarActive, setNavbarActive] = useState(false);
+  
   const [signinProfile, setSigninProfile] = useState(false);
+  const [navbarActive, setNavbarActive] = useState(false);
 
   const toggleNavbar = () => {
     setNavbarActive((prev) => !prev);
   };
-
+  
   const toggleSigninProfile = () => {
     setSigninProfile((prev) => !prev);
   };
@@ -29,7 +30,7 @@ const Header = () => {
 
           <nav className={`navbar ${navbarActive ? "active" : ""}`}>
             <Link to="/">Home</Link>
-            <Link to="/">Movies</Link>
+            <Link to="/movies">Movies</Link>
             <Link to="/">Blog</Link>
             <Link to="/about">About Us</Link>
             <Link to="/contact">Contact</Link>
@@ -38,9 +39,8 @@ const Header = () => {
           <div className="icons">
             <div
               className={`sign-in ${signinProfile ? "profile" : ""}`}
-              onClick={toggleSigninProfile}
             >
-              <span className="btn-text">sign in</span>
+              <a href="/login" className="btn-text"><span>sign in</span></a>
               <div className="image-container">
                 <img src="img/profile-pic.jpg" alt="" />
               </div>
