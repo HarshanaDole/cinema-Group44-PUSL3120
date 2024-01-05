@@ -1,9 +1,16 @@
+import { useNavigate } from 'react-router-dom';
 import Header from "../components/header.js";
 import Footer from "../components/footer.js";
 import "../css/style.css";
 import "../css/buytickets.css";
 
 export default function BuyTickets() {
+  const navigate = useNavigate();
+
+  const navigateButtonClick = () => {
+    navigate("/selectseats");
+  };
+
   return (
     <div>
       <Header />
@@ -14,7 +21,7 @@ export default function BuyTickets() {
               <div className="col-9">
                 <ol>
                   <li>
-                    <a className="directory" href="index.html">
+                    <a className="directory" href="/">
                       Home
                     </a>
                   </li>
@@ -158,14 +165,14 @@ export default function BuyTickets() {
                           <span>Digital 2D</span>
                           <button
                             className="time-btn"
-                            onclick="location='select-seat.html'"
+                            onClick={navigateButtonClick}
                           >
                             7.30AM
                           </button>
                         </div>
                         <div className="col-4 col-md-3 d-flex flex-column">
                           <span>Digital 3D</span>
-                          <button className="time-btn">10.30AM</button>
+                          <button className="time-btn" onClick={navigateButtonClick}>10.30AM</button>
                         </div>
                       </div>
                     </div>

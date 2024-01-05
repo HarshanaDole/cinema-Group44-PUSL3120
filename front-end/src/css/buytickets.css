@@ -166,11 +166,6 @@
     user-select: none;
   }
   
-  .seat-table td:hover{
-    background-color: blue;
-    color: white;
-  }
-  
   .seat-table .selected {
     background-color: blue;
     color: white;
@@ -179,11 +174,13 @@
   .seat-table .reserved {
     background-color: red;
     color: white;
+    cursor: default;
   }
   
   .seat-table .unavailable {
     background-color: pink;
     color: white;
+    cursor: default;
   }
   
   .seat-table .hide {

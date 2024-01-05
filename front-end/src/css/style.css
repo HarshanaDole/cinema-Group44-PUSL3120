@@ -144,6 +144,7 @@ select {
 .filter-field {
   display: flex;
   gap: 1rem;
+  font-size: 1.5rem;
 }
 
 .filter-field .select-wrapper {
@@ -301,8 +302,6 @@ select {
 }
 
 .filter-popup .container .checkmark:after {
-  left: 6px;
-  top: 2px;
   width: 5px;
   height: 10px;
   border: solid white;
@@ -313,6 +312,7 @@ select {
 }
 
 .filter-popup .apply-filters {
+  font-size: 1.4rem;
   padding: 1rem 1.5rem;
   background-color: var(--main-color);
   color: var(--white);
