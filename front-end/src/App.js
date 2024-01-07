@@ -8,6 +8,7 @@ import SelectSeats from "./pages/SelectSeats";
 import LoginForm from "./pages/Login";
 import SignUpForm from "./pages/Registration";
 import Movies from "./pages/Movies";
+import Profile from "./pages/Profile";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/selectseats" element={<SelectSeats />} />
           <Route path="/login" element={<LoginForm />} />
           <Route path="/signup" element={<SignUpForm />} />
+          <Route path="/profile" element={<Profile />} />
         </Routes>
       </BrowserRouter>
     </div>
